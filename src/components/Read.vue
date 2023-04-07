@@ -51,42 +51,43 @@
     </div>
   </section>
   <section ref="section2" id="section2" class="section2">
-        <h1>5 inque 업무영역</h1>
+    <img src="../assets/jg.jpg" style="margin-bottom: 30px;  padding-bottom: 5% ">
         <div style="display:flex;">
     <div style="width:25%; float:left;">
-      <b-card style="max-width: 100%; height: 100%;">
-        <b-card-title>Low Cost</b-card-title>
-        <img title="Card Title" src="../assets/1.jpg" alt="Image" tag="article" top style="max-width: 17rem;" class="mb-2">
+    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+    img-alt="Card image" style="max-width: 100%; height: 100%;">
         <b-card-text>비용절감 측면에서 설명</b-card-text>
       </b-card>
     </div>
 
     <div style="width:25%; float:left;">
-      <b-card style="max-width: 100%; height: 100%;">
-        <b-card-title>Security</b-card-title>
-        <img title="Card Title" src="../assets/2.jpg" alt="Image" tag="article" top style="max-width: 17rem;" class="mb-2">
+      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+    img-alt="Card image" style="max-width: 100%; height: 100%;">
+        <!-- <b-card-title>Security</b-card-title>
+        <img title="Card Title" src="../assets/2.jpg" alt="Image" tag="article" top style="max-width: 17rem;" class="mb-2"> -->
         <b-card-text>보안관련 기능 설명</b-card-text>      
       </b-card>
     </div>
 
     <div style="width:25%; float:left;">
-      <b-card style="max-width: 100%; height: 100%;">
-        <b-card-title>flexibility</b-card-title>
-        <img title="Card Title" src="../assets/3.jpg" alt="Image" tag="article" top style="max-width: 17rem;" class="mb-2">
+      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+    img-alt="Card image" style="max-width: 100%; height: 100%;">
         <b-card-text>Startup의 특성 중 하나인 데이터 사용의 급증에 대처할 수 있는 기능 소개</b-card-text>      
       </b-card>
     </div>
 
     <div style="width:25%; float:left;">
-      <b-card style="max-width: 100%; height: 100%;">
-        <b-card-title>아무거나</b-card-title>
-        <img title="Card Title" src="../assets/logo.png" alt="Image" tag="article" top style="max-width: 17rem;" class="mb-2">
+      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+    img-alt="Card image" style="max-width: 100%; height: 100%;">
         <b-card-text>무엇을 넣을지 생각해보기</b-card-text>       
       </b-card>
     </div>
   </div>
   </section>
   <section ref="section3" id="section3" class="section3">
+    <div>
+    <img src="../assets/jg.jpg" style="margin-bottom: 30px;">
+    </div>
         <!-- <h1>Section 3</h1>
         <div style="margin: 150px 0 10px;">
                 <h1 style="font-size:90px; font-family:궁서체;" class="profile">Profile</h1>
@@ -139,7 +140,8 @@
                 </div>
             </div> -->
 
-    <div style="width:20%; float:left; margin-left: 10%;">
+    <!-- <div style="width:20%; float:left; margin-left: 10%;"> -->
+    <div style="width:15%; float:left; margin-left: 2.5%">
     <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
     img-alt="Card image">
       <b-card-text>
@@ -155,16 +157,16 @@
             좋아하는 음식 : 
           </li>
           <li>
-            사는 곳 : 노원구
+            사는 곳 : feqfqefqefe
           </li>
-        </ul>  
-        
+        </ul>        
       </b-card-text>
       <b-button href="#" variant="primary">Go somewhere</b-button>
     </b-card>
     </div>
 
-    <div style="width:20%; float:left; margin-left: 10%; margin-right: 10%;">
+    <!-- <div style="width:20%; float:left; margin-left: 10%; margin-right: 10%;"> -->
+    <div style="width:15%; float:left; margin-left: 5%">
     <b-card img-src="https://placekitten.com/300/300" img-alt="Card image">
       <b-card-text>
         <h4>이승진</h4>
@@ -187,7 +189,8 @@
     </b-card>
     </div>
     
-    <div style="width:20%; float:right; margin-right: 10%;">
+    <!-- <div style="width:20%; float:right; margin-right: 10%;"> -->
+      <div style="width:15%; float:left; margin-left: 5%">
     <b-card img-src="https://placekitten.com/300/300" img-alt="Card image">
       <b-card-text>
         <h4>이승진</h4>
@@ -210,7 +213,8 @@
     </b-card>
     </div>
 
-    <div style="width:20%; float:left; margin-left: 25%;">
+    <!-- <div style="width:20%; float:left; margin-left: 25%;"> -->
+    <div style="width:15%; float:left; margin-left: 5%">
     <b-card img-src="https://placekitten.com/300/300" img-alt="Card image">
       <b-card-text><h4>이승진</h4>
         <ul>
@@ -224,15 +228,16 @@
             좋아하는 음식 : 
           </li>
           <li>
-            사는 곳 : feqfqefqefeq
+            사는 곳 : feqfqefqefe
           </li>
-        </ul>          
+        </ul>        
       </b-card-text>
       <b-button href="#" variant="primary">Go somewhere</b-button>
     </b-card>
     </div>
 
-    <div style="width:20%; float:right; margin-right: 25%;">
+    <!-- <div style="width:20%; float:right; margin-right: 25%;"> -->
+    <div style="width:15%; float:left; margin-left: 5%">
     <b-card img-src="https://placekitten.com/300/300" img-alt="Card image">
       <b-card-text>
         <h4>이승진</h4>
@@ -466,28 +471,28 @@ section.section1 {
     width: 100%;
     height: 80em;
     list-style-type: none;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(244, 244, 244, 0.899);
 }
 section.section2 {
-    padding-top: 0;
-    width: 100%;
-    height: 50em;
-    list-style-type: none;
-    background-color: rgb(87, 113, 17);
-}
-section.section3 {
-    padding-top: 0;
+    padding-top: 5%;
     width: 100%;
     height: 80em;
     list-style-type: none;
-    background-color: rgb(100, 31, 136);
+    background-color: rgb(244, 244, 244, 0.899);
+}
+section.section3 {
+    padding-top: 5%;
+    width: 100%;
+    height: 85em;
+    list-style-type: none;
+    background-color: rgba(244, 244, 244, 0.899);
 }
 section.section4 {
     padding-top: 0;
     width: 100%;
     height: 30em;
     list-style-type: none;
-    background-color: rgb(150, 126, 59);
+    background-color: rgb(244, 244, 244, 0.899);
 }
 
 /* b-navbar {
@@ -524,8 +529,8 @@ div.left {
     width: 50%;
     float: left;
     box-sizing: border-box;
-    background: #ff0;
-}
+    background: rgb(244, 244, 244, 0.899);
+} 
 
 div.map{
     width:50%;
@@ -573,5 +578,7 @@ section.section5 {
     list-style-type: none;
     background-color: rgb(255, 255, 255);
   }
-
+ul li {
+  text-align: left;
+}
 </style>
