@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Read from '@/components/Read'
 import Create from '@/components/Create'
 import Detail from '@/components/Detail'
+import Contact from '@/components/Contact'
 
 Vue.use(Router)
 
@@ -20,9 +21,9 @@ export default new Router({
       component: Create
     },
     {
-      path: '/detail/:id',
-      name: 'Detail',
-      component: Detail
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     }
   ]
 })

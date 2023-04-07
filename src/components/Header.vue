@@ -1,27 +1,49 @@
 <template>
-    <header>
-        <navbar>
-            <ul class="header">
-            <a href="#" @click.prevent="scrollToSection('section1')">Go to section1</a>
-            <a href="#" @click.prevent="scrollToSection('section2')">Go to section2</a>
-            <a href="#" @click.prevent="scrollToSection('section3')">Go to section3</a>
-            <a href="#" @click.prevent="scrollToSection('section4')">Go to section4</a>
-        </ul>
-                <section ref="section1" id="section1" class="section1">
-        <h1>Section 1</h1>
-    </section>
-            <section ref="section2" id="section2" class="section2">
-        <h1>Section 2</h1>
-    </section>
-            <section ref="section3" id="section3" class="section3">
-        <h1>Section 3</h1>
-    </section>
-            <section ref="section4" id="section4" class="section4">
-        <h1>Section 4</h1>
-    </section>
-        </navbar>
-    </header>
+<div>
+  <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item href="#">Link</b-nav-item>
+        <b-nav-item href="#" disabled>Disabled</b-nav-item>
+        <b-nav-item href="#" @click.prevent="scrollToSection('section1')">Go to section1</b-nav-item>
+        <b-nav-item ref="#" @click.prevent="scrollToSection('section2')">Go to section2</b-nav-item>
+        <b-nav-item href="#" @click.prevent="scrollToSection('section3')">Go to section3</b-nav-item>
+        <b-nav-item href="#" @click.prevent="scrollToSection('section4')">Go to section4</b-nav-item>
+      </b-navbar-nav>
+
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+</div>
 </template>
+
+<script>
+export default {
+    name: 'header',
+    data () {
+    return {
+        data: data
+    }
+    },
+    methods: {
+        write() {
+            this.$router.push({
+                path: 'create'
+            })
+        },
+        scrollToSection(refName) {
+        const section = this.$refs[refName];
+        section.scrollIntoView({ behavior: 'smooth' });
+    },
+    },
+}
+</script>
 
 <style scoped>
 header {
