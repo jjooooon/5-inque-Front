@@ -11,9 +11,15 @@
 </template>
 
 <script>
+
+import KakaoMap from "./components/Read.vue";
+
 export default {
-  name: 'App'
-}
+  name: "App",
+  components: {
+    KakaoMap,
+  },
+};
 </script>
 
 <style>
