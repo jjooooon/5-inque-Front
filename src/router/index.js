@@ -5,6 +5,7 @@ import Read from '@/components/Read'
 import Create from '@/components/Create'
 import Detail from '@/components/Detail'
 import Contact from '@/components/Contact'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     }
   ]
 })

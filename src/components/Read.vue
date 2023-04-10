@@ -1,55 +1,39 @@
 <template>
   <div>
     <div class="header">
-          <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <a href="#">
-                        <img src="../assets/main.png" width="150px" class="navbar-brand">
-            </a>
-            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap float-right">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"></span>
+        <a href="#">
+            <img src="../assets/main.png" width="170px" class="navbar-brand">
+        </a>
+        <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+            <img src="../assets/main.png" alt="logo">
+        </a>
+        <div class="w-100 text-right">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="float-right" id="navbarsExample11">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                  <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section1')">Section1</b-nav-item>
-                  <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section2')">Section2</b-nav-item>
-                  <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section3')">Section3</b-nav-item>
-                  <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section4')">Section4</b-nav-item>
-                </ul>
-              </div>
-            </div>
-          </nav>
+            </button>
+        </div>
+    </div>
+    <div id="myNavbar">
+        <ul class="navbar-nav ml-auto flex-nowrap" style="padding-right: 10em">
+            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section1')"><h4>Service</h4></b-nav-item>
+            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section2')"><h4>Skill</h4></b-nav-item>
+            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section3')"><h4>Member</h4></b-nav-item>
+            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section4')"><h4>Contact</h4></b-nav-item>
+        </ul>
+    </div>
+</nav>
+
         </div>
 
   <section ref="section1" id="section1" class="section1">
-    <div>
-      <b-carousel
-        id="carousel-fade"
-        style="text-shadow: 0px 0px 0px #000"
-        v-model="slide"
-        :interval="5000"
-        controls
-        indicators
-          fade
-      >
-        <b-carousel-slide>
-          <img slot="img" class="d-block img-fluid w-100"
-              src="../assets/1.jpg" alt="image slot"  caption="contact us">
-              
-        </b-carousel-slide>
 
-        <b-carousel-slide>
-          <img slot="img" class="d-block img-fluid w-100"
-              src="../assets/2.jpg" alt="image slot" caption="contact us">
-        </b-carousel-slide>
-
-        <b-carousel-slide>
-          <img slot="img" class="d-block img-fluid w-100"
-              src="../assets/3.jpg" alt="image slot" caption="contact us">
-        </b-carousel-slide>
-      </b-carousel>
-    </div>
   </section>
+  <div style="margin-top: 10%;">
+      
+    </div>
   <section ref="section2" id="section2" class="section2">
     <img src="../assets/jg.jpg" style="margin-bottom: 30px;  padding-bottom: 5% ">
         <div style="display:flex;">
@@ -357,49 +341,7 @@ export default {
 
     // }
     // },
-        name: "KakaoMap", // 컴포넌트 이름 지정
-    data() {
-        return {
-            map: null,
-            markers: [],
-            latitude: 0,
-            longitude: 0,
-            slide: 0,
-        sliding: null,
-      username: '',
-      email: '',
-      phone: '',
-      content: '',
-      types: [
-          'text',
-        ],
-        }
-    },
-    created() {
-        if (!("geolocation" in navigator)) {
-            return;
-    }
-    // get position
-    navigator.geolocation.getCurrentPosition(pos => {
-      this.latitude = pos.coords.latitude;
-      this.longitude = pos.coords.longitude;
-
-      if (window.kakao && window.kakao.maps) {
-
-        this.initMap();
-
-      } else {
-        const script = document.createElement("script");
-        /* global kakao */
-        script.onload = () => kakao.maps.load(this.initMap);
-        script.src = "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=4269093bca27d305fe5d0ea9428c556a";
-        document.head.appendChild(script);
-      }
-
-    }, err => {
-      alert(err.message);
-    })
-    },
+     
     methods: {
         write() {
             this.$router.push({
@@ -425,41 +367,6 @@ export default {
     	console.warn("Error : ",ex)
     })
 },
-initMap() {
-            const container = document.getElementById("map");
-            const options = {
-                center: new kakao.maps.LatLng(33.450701, 126.570667),
-                level: 5,
-            };
-            this.map = new kakao.maps.Map(container, options);
-            this.displayMarker([[this.latitude, this.longitude]]);
-        },
-        displayMarker(markerPositions) {
-            if (this.markers.length > 0) {
-                this.markers.forEach((marker) => marker.setMap(null));
-            }
-
-            const positions = markerPositions.map(
-                (position) => new kakao.maps.LatLng(...position)
-            );
-
-            if (positions.length > 0) {
-                this.markers = positions.map(
-                    (position) =>
-                        new kakao.maps.Marker({
-                            map: this.map,
-                            position,
-                        })
-                );
-
-                const bounds = positions.reduce(
-                    (bounds, latlng) => bounds.extend(latlng),
-                    new kakao.maps.LatLngBounds()
-                );
-
-                this.map.setBounds(bounds);
-            }
-        }
     },
     components: {Header, Footer}
 }
@@ -476,7 +383,7 @@ section.section1 {
 section.section2 {
     padding-top: 5%;
     width: 100%;
-    height: 80em;
+    height: 50em;
     list-style-type: none;
     background-color: rgb(244, 244, 244, 0.899);
 }
@@ -499,18 +406,16 @@ section.section4 {
     position: fixed;
 } */
 div.header {
-  position:fixed; /* fixing the position takes it out of html flow - knows
-                   nothing about where to locate itself except by browser
-                   coordinates */
-  left:0;           /* top left corner should start at leftmost spot */
-  top:0;            /* top left corner should start at topmost spot */
-  width:100vw;      /* take up the full browser width */
-  z-index:200;  /* high z index so other content scrolls underneath */
+  position:fixed; 
+  left:0;         
+  top:0;          
+  width:100vw;     
+  z-index:400;  
   height:100px; 
 }
 
 ul.navbar-nav {
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -563,14 +468,6 @@ ul.header {
     right: 0;
 }
 
-ul.header {
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
 section.section5 {
     padding-top: 0;
     width: 100%;
@@ -581,4 +478,19 @@ section.section5 {
 ul li {
   text-align: left;
 }
+
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
+
+div.myNavbar {
+  padding-right: 200px;
+}
+
 </style>
