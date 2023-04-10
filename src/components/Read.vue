@@ -18,9 +18,9 @@
     </div>
     <div id="myNavbar">
         <ul class="navbar-nav ml-auto flex-nowrap" style="padding-right: 10em">
-            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section1')"><h4>Service</h4></b-nav-item>
-            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section2')"><h4>Skill</h4></b-nav-item>
-            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section3')"><h4>Member</h4></b-nav-item>
+            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section1')"><h4>Main</h4></b-nav-item>
+            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section2')"><h4>Service</h4></b-nav-item>
+            <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section3')"><h4>Profile</h4></b-nav-item>
             <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section4')"><h4>Contact</h4></b-nav-item>
         </ul>
     </div>
@@ -29,13 +29,37 @@
         </div>
 
   <section ref="section1" id="section1" class="section1">
+    <div>
+      <b-carousel
+        id="carousel-fade"
+        style="text-shadow: 0px 0px 0px #000"
+        v-model="slide"
+        :interval="5000"
+        controls
+        indicators
+          fade
+      >
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+              src="../assets/1.jpg" alt="image slot"  caption="contact us">
+              
+        </b-carousel-slide>
 
-  </section>
-  <div style="margin-top: 10%;">
-      
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+              src="../assets/2.jpg" alt="image slot" caption="contact us">
+        </b-carousel-slide>
+
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+              src="../assets/3.jpg" alt="image slot" caption="contact us">
+        </b-carousel-slide>
+      </b-carousel>
     </div>
+  </section>
+
   <section ref="section2" id="section2" class="section2">
-    <img src="../assets/jg.jpg" style="margin-bottom: 30px;  padding-bottom: 5% ">
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F7937h%2Fbtr8LjeaHJ9%2FJNb9hn4JMF3fasinVIo52K%2Fimg.png">
         <div style="display:flex;">
     <div style="width:25%; float:left;">
     <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
@@ -69,8 +93,8 @@
   </div>
   </section>
   <section ref="section3" id="section3" class="section3">
-    <div>
-    <img src="../assets/jg.jpg" style="margin-bottom: 30px;">
+    <div style="margin-top: 5%;">
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FAdUwS%2Fbtr8ZU4ROZ8%2FznF5yXQPAkKzIrKIL7j171%2Fimg.png" style="margin-bottom: 30px;">
     </div>
         <!-- <h1>Section 3</h1>
         <div style="margin: 150px 0 10px;">
@@ -125,6 +149,9 @@
             </div> -->
 
     <!-- <div style="width:20%; float:left; margin-left: 10%;"> -->
+      <div style="margin-top: 1%;">
+      
+    </div>
     <div style="width:15%; float:left; margin-left: 2.5%">
     <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
     img-alt="Card image">
@@ -250,7 +277,7 @@
       <div class="outline">
         <div class="left">
 <div class="contact-title">
-  <h1>Contact us</h1>
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FYRizL%2Fbtr8NcyMVX9%2F4Mo87MXE607X4WLK7OzeoK%2Fimg.png" style="margin-bottom: 30px;  padding-bottom: 5%; width: 30%;">
 </div>
 <!-- ---------------username--------------- -->
     <b-row class="my-1" v-for="type in types" :key="type">
@@ -282,7 +309,7 @@
       </b-col>
     </b-row>
 <!-- ---------------email--------------- -->
-          <!-- ---------------content--------------- -->
+<!-- ---------------content--------------- -->
     <b-row class="mt-2">
     <b-col sm="2">
       <label for="textarea-no-auto-shrink">Content</label>
@@ -298,8 +325,8 @@
       ></b-form-textarea>
     </b-col>
   </b-row>
-    <!-- ---------------content--------------- -->
-    <!-- ---------------content--------------- -->
+  <!-- ---------------content--------------- -->
+  <!-- ---------------content--------------- -->
     <b-row class="mt-2">
     <b-col sm="2">
 
@@ -321,7 +348,7 @@
       <div class="final" id="final" style="padding-top: 70px; padding-bottom: 70px;">
             <h5>Secac AWS Hybrid Cloud ㅣ Team : 5inQ ㅣ 사업자등록번호 : 107-86-56982 ㅣ 주소 : 서울시 서초구 서초대로74길 23, 704호</h5>
             <h6>대표전화 : 02-598-1978 ㅣ FAX : 02-598-1979 ㅣ 이메일 : kifas@kifas.co.kr ㅣ 업무시간: AM 9:00 ~ PM 6:00 ㅣ 휴무일: 주말, 공휴일</h6>
-            <h7 class="last">COPYRIGHTⓒ 5inQ(주) All rights reserved ㅣ Designed by Junyoung Lee, Jihwan Park, Seungjin Lee, Minjun Hu, Jaeha Jung.</h7>
+            <h7 class="last">COPYRIGHTⓒ 5inQ(주) All rights reserved ㅣ Designed by Junyoung Lee, Jihwan Park, Seungjin Lee, Minjun Hu, Jaeha Jeong.</h7>
         </div>
     </section>
   </div>
@@ -341,7 +368,45 @@ export default {
 
     // }
     // },
-     
+    name: "KakaoMap", // 컴포넌트 이름 지정
+    data() {
+        return {
+            map: null,
+            markers: [],
+            latitude: 0,
+            longitude: 0,
+            slide: 0,
+        sliding: null,
+      username: '',
+      email: '',
+      phone: '',
+      content: '',
+      types: [
+          'text',
+        ],
+        }
+    },
+    created() {
+        if (!("geolocation" in navigator)) {
+            return;
+    }
+    // get position
+    navigator.geolocation.getCurrentPosition(pos => {
+      this.latitude = pos.coords.latitude;
+      this.longitude = pos.coords.longitude;
+      if (window.kakao && window.kakao.maps) {
+        this.initMap();
+      } else {
+        const script = document.createElement("script");
+        /* global kakao */
+        script.onload = () => kakao.maps.load(this.initMap);
+        script.src = "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=4269093bca27d305fe5d0ea9428c556a";
+        document.head.appendChild(script);
+      }
+    }, err => {
+      alert(err.message);
+    })
+    },
     methods: {
         write() {
             this.$router.push({
@@ -367,6 +432,37 @@ export default {
     	console.warn("Error : ",ex)
     })
 },
+initMap() {
+            const container = document.getElementById("map");
+            const options = {
+                center: new kakao.maps.LatLng(33.450701, 126.570667),
+                level: 5,
+            };
+            this.map = new kakao.maps.Map(container, options);
+            this.displayMarker([[this.latitude, this.longitude]]);
+        },
+        displayMarker(markerPositions) {
+            if (this.markers.length > 0) {
+                this.markers.forEach((marker) => marker.setMap(null));
+            }
+            const positions = markerPositions.map(
+                (position) => new kakao.maps.LatLng(...position)
+            );
+            if (positions.length > 0) {
+                this.markers = positions.map(
+                    (position) =>
+                        new kakao.maps.Marker({
+                            map: this.map,
+                            position,
+                        })
+                );
+                const bounds = positions.reduce(
+                    (bounds, latlng) => bounds.extend(latlng),
+                    new kakao.maps.LatLngBounds()
+                );
+                this.map.setBounds(bounds);
+            }
+        }
     },
     components: {Header, Footer}
 }
@@ -383,12 +479,12 @@ section.section1 {
 section.section2 {
     padding-top: 5%;
     width: 100%;
-    height: 50em;
+    height: 65em;
     list-style-type: none;
     background-color: rgb(244, 244, 244, 0.899);
 }
 section.section3 {
-    padding-top: 5%;
+    padding-top: 3%;
     width: 100%;
     height: 85em;
     list-style-type: none;
@@ -491,6 +587,10 @@ ul li {
 
 div.myNavbar {
   padding-right: 200px;
+}
+
+div.middle {
+  background-color: #f5f5f5;
 }
 
 </style>
