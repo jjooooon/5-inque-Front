@@ -250,7 +250,7 @@
         <label :for="`type-${type}`">name</label>
       </b-col>
       <b-col sm="9">
-        <b-form-input :id="`type-${type}`" :type="type" v-model="username"></b-form-input>
+        <b-form-input :id="`type-${type}`" :type="type" v-model="username" placeholder="실제 개인정보를 입력하지 마세요."></b-form-input>
       </b-col>
     </b-row>
 <!-- ---------------username--------------- -->
@@ -260,7 +260,7 @@
         <label :for="`type-${type}`">phone</label>
       </b-col>
       <b-col sm="9">
-        <b-form-input :id="`type-${type}`" :type="type" v-model="phone"></b-form-input>
+        <b-form-input :id="`type-${type}`" :type="type" v-model="phone" placeholder="실제 개인정보를 입력하지 마세요."></b-form-input>
       </b-col>
     </b-row>
 <!-- ---------------phone--------------- -->
@@ -270,7 +270,7 @@
         <label :for="`type-${type}`">email</label>
       </b-col>
       <b-col sm="9">
-        <b-form-input :id="`type-${type}`" :type="type" v-model="email"></b-form-input>
+        <b-form-input :id="`type-${type}`" :type="type" v-model="email" placeholder="실제 개인정보를 입력하지 마세요."></b-form-input>
       </b-col>
     </b-row> 
 <!-- ---------------email--------------- -->
@@ -282,7 +282,7 @@
     <b-col sm="9">
       <b-form-textarea
         id="textarea-no-auto-shrink"
-        placeholder="Auto height (no-shrink) textarea"
+        placeholder="실제 개인정보를 입력하지 마세요."
         rows="4"
         max-rows="4"
         no-auto-shrink
@@ -360,7 +360,7 @@ export default {
         const script = document.createElement("script");
         /* global kakao */
         script.onload = () => kakao.maps.load(this.initMap);
-        script.src = "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=4269093bca27d305fe5d0ea9428c556a";
+        script.src = "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=e42d35dece7445df93f0e1eb6b4c1094";
         document.head.appendChild(script);
       }
     }, err => {
@@ -379,22 +379,27 @@ export default {
         scrollToSection(refName) {
         const section = this.$refs[refName];
         section.scrollIntoView({ behavior: 'smooth' });
-        },
+    },
 
-        submitForm: function() {
-          console.log(this.username, this.email, this.phone, this.content);
-        },
-        send : function() {
-        axios.post('http://localhost:8085/contact',
-          {info: { username:this.username, email:this.email, phone: this.phone, content: this.content }}
-        ).then(response => {
-            console.warn(response)
-            this.result = response.data
-            this.no = response.data.no
-        }).catch((ex) => {
-          console.warn("Error : ",ex)
-        })
-        },
+    submitForm: function() {
+      console.log(this.username, this.email, this.phone, this.content);
+    },
+    send : function() {
+    axios.post(`${process.env.VUE_APP_WAS}/contact`,
+    	{info: { username:this.username, email:this.email, phone: this.phone, content: this.content }}
+    ).then(response => {
+      if(response.status == 200) {
+        alert("등록되었습니다.")
+        this.$router.go()
+      }
+        this.result = response.data
+        this.no = response.data.no
+    }).catch((ex) => {
+    	console.warn("Error : ",ex)
+    })
+},
+
+
         initMap() {
                     const container = document.getElementById("map");
                     const options = {
