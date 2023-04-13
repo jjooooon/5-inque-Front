@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-deploy-fe
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      tier: aws-fe
+  template:
+    metadata:
+      name: front-end
+      labels:
+        tier: aws-fe
+    spec:
+      containers:
+        - name: aws-fe-container
+          image: jeongjaeha/aws:1.6
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+          - name: VUE_APP_WAS
+            valueFrom:
+              configMapKeyRef:
+                name: cm
+                key: VUE_APP_WAS
