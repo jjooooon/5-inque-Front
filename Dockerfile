@@ -19,7 +19,7 @@ COPY . .
 RUN npm run build
 
 EXPOSE 8080
-CMD [ "http-server", "dist" ]
+CMD [ "http-server", "dist"]
 
 # FROM node:16-alpine AS build
 # WORKDIR /app

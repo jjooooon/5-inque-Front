@@ -385,6 +385,7 @@ export default {
       console.log(this.username, this.email, this.phone, this.content);
     },
     send : function() {
+      console.log(process.env)
     axios.post(`${process.env.VUE_APP_WAS}/contact`,
     	{info: { username:this.username, email:this.email, phone: this.phone, content: this.content }}
     ).then(response => {
