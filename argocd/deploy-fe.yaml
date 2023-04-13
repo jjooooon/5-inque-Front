@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: aws-fe-container
-          image: jeongjaeha/aws:latest
+          image: jeongjaeha/5inque:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

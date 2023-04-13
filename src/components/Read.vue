@@ -18,10 +18,10 @@
     </div>
         <div id="myNavbar">
             <ul class="navbar-nav ml-auto flex-nowrap" style="padding-right: 10em">
-                <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section1')"><h4>test1</h4></b-nav-item>
-                <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section2')"><h4>test2</h4></b-nav-item>
-                <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section3')"><h4>test3</h4></b-nav-item>
-                <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section4')"><h4>Contact</h4></b-nav-item>
+                <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section1')"><h4>tes1t1</h4></b-nav-item>
+                <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section2')"><h4>tes1t2</h4></b-nav-item>
+                <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section3')"><h4>te1st3</h4></b-nav-item>
+                <b-nav-item class="nav-link" href="#" @click.prevent="scrollToSection('section4')"><h4>Cont1act</h4></b-nav-item>
             </ul>
         </div>
         </nav>
