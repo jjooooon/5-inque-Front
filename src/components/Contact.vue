@@ -93,7 +93,7 @@
         },
         sendClearList() {
       axios
-        .patch("http://localhost:8085/contact/delete", { clearList: this.clearList })
+        .patch(`${process.env.VUE_APP_WAS}/contact/delete`, { clearList: this.clearList })
         .then(response => {
           console.warn("Success: ", response.status);
           if(response.status == 204) this.$router.go()
@@ -104,7 +104,7 @@
     },
     },
     mounted() {
-        axios.get('http://localhost:8085/contact/getList'
+        axios.get(`${process.env.VUE_APP_WAS}/contact/getList`
         ).then(response => {
             console.warn("before", response.data)
             this.items = response.data.list;
