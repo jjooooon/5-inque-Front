@@ -346,14 +346,28 @@ export default {
         }
     },
 
+    // created() {
+    //   if (!("geolocation" in navigator)) {
+    //         return;
+    // }
+    // // get position
+    // navigator.geolocation.getCurrentPosition(pos => {
+    //   this.latitude = pos.coords.latitude;
+    //   this.longitude = pos.coords.longitude;
+    //   if (window.kakao && window.kakao.maps) {
+    //     this.initMap();
+    //   } else {
+    //     const script = document.createElement("script");
+    //     /* global kakao */
+    //     script.onload = () => kakao.maps.load(this.initMap);
+    //     script.src = "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=4269093bca27d305fe5d0ea9428c556a";
+    //     document.head.appendChild(script);
+    //   }
+    // }, err => {
+    //   alert(err.message);
+    // })
+    // },
     created() {
-      if (!("geolocation" in navigator)) {
-            return;
-    }
-    // get position
-    navigator.geolocation.getCurrentPosition(pos => {
-      this.latitude = pos.coords.latitude;
-      this.longitude = pos.coords.longitude;
       if (window.kakao && window.kakao.maps) {
         this.initMap();
       } else {
@@ -363,9 +377,6 @@ export default {
         script.src = "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=4269093bca27d305fe5d0ea9428c556a";
         document.head.appendChild(script);
       }
-    }, err => {
-      alert(err.message);
-    })
     },
     methods: {
         redirectToNaverMap() {
@@ -396,14 +407,14 @@ export default {
         })
         },
         initMap() {
-                    const container = document.getElementById("map");
-                    const options = {
-                        center: new kakao.maps.LatLng(37.557471, 127.17351),
-                        level: 5,
-                    };
-                    this.map = new kakao.maps.Map(container, options);
-                    this.displayMarker([[37.557471, 127.17351]]);
-                },
+          const container = document.getElementById("map");
+          const options = {
+              center: new kakao.maps.LatLng(37.557471, 127.17351),
+              level: 5,
+          };
+          this.map = new kakao.maps.Map(container, options);
+          this.displayMarker([[37.557471, 127.17351]]);
+        },
             displayMarker(markerPositions) {
                 if (this.markers.length > 0) {
                     this.markers.forEach((marker) => marker.setMap(null));
@@ -457,11 +468,8 @@ export default {
                     });
 
                     const zoomControl = new kakao.maps.ZoomControl();
-                    this.map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-                    
-                    
-                    
-
+                    this.map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);                  
+                                       
 
             }
         }
