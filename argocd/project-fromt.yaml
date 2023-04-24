@@ -45,7 +45,7 @@ kind: Deployment
 metadata:
   name: project-deploy-fe
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       tier: aws-fe
