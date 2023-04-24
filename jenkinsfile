@@ -43,7 +43,8 @@ pipeline {
                 }
             }
         }
-        post {
+    }
+    post {
         success {
             slackSend (
                 channel: '#management-service-for-start-up', 
@@ -60,6 +61,5 @@ pipeline {
                 message: "FAIL: Job ${dockerImage}"
             )
         }
-    }
     }
 }
