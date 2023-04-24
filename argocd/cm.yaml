@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm
+data:
+  TYPEORM_CONNECTION: "mysql"
+  TYPEORM_HOST: "database-1.cluster-cwcn5fjfpfwe.ap-northeast-2.rds.amazonaws.com"
+  TYPEORM_USERNAME: "root"
+  TYPEORM_PASSWORD: "root1234"
+  TYPEORM_DATABASE: "5inque"
+  TYPEORM_PORT: "3306"
+  DATABASE_URL: "mysql://root:root1234@database-1.cluster-cwcn5fjfpfwe.ap-northeast-2.rds.amazonaws.com:3306/5inque"
+  VUE_APP_WAS: "https://k8s-eksdemogroup-dd5ecf0339-2134064941.ap-northeast-2.elb.amazonaws.com"
+  TYPEORM_READ_HOST: "database-1.cluster-ro-cwcn5fjfpfwe.ap-northeast-2.rds.amazonaws.com"

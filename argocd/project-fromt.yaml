@@ -1,0 +1,69 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: "frontend-ingress"
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/group.name: eks-demo-group
+    alb.ingress.kubernetes.io/group.order: '3'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:024555281827:certificate/962c6869-4b9e-4692-9e0d-f3fb9fa43337
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: inque-web
+            port:
+              number: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: inque-web
+  labels:
+    tier: aws-fe
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    protocol: TCP
+    name: http
+  - port: 443
+    protocol: TCP
+    name: https
+  selector:
+    tier: aws-fe
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-deploy-fe
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      tier: aws-fe
+  template:
+    metadata:
+      name: front-end
+      labels:
+        tier: aws-fe
+    spec:
+      containers:
+        - name: aws-fe-container
+          image: jeongjaeha/5inque:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+          - name: VUE_APP_WAS
+            valueFrom:
+              configMapKeyRef:
+                name: cm
+                key: VUE_APP_WAS
