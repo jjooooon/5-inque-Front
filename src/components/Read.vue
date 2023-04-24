@@ -227,11 +227,11 @@
             <b>Tech Stack</b> : <br>Cloud Security
           </li>
           <li>
-            <b>Job Title</b> : <br>Network Engineer<br>&nbsp
+            <b>Job Title</b> : <br>Network Engineer<br>&nbsp 
           </li>
         </ul>       
       </b-card-text>
-      <b-button href="https://www.naver.com" variant="primary">Portfolio</b-button>
+      <b-button href="https://hilarious-silverfish-988.notion.site/9b9ef337f0cc4e38bb4ee2e9bfb49df0" variant="primary">Portfolio</b-button>
     </b-card>
     </div>
 
