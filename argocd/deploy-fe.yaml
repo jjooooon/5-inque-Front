@@ -18,7 +18,7 @@ spec:
           image: jeongjaeha/5inque:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           env:
           - name: VUE_APP_WAS
             valueFrom:
