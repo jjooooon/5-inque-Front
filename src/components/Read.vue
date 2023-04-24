@@ -119,7 +119,7 @@
             <b>Tech Stack</b> : <br>Kubernetes
           </li>
           <li>
-            <b>Job Title</b> : <br>k8s Architecture<br>&nbsp
+            <b>Job Title</b> : <br>k8s Engineer<br>&nbsp
           </li>
         </ul>        
       </b-card-text>
