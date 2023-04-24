@@ -37,8 +37,14 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('', dockerhub_credentials) {
-                        dockerImage.push()
-                        dockerImageLatest.push()
+                        try {
+                            dockerImage.push()
+                            dockerImageLatest.push()
+                            currentBuild.result = 'SUCCESS'
+                        } catch (Exception e) {
+                            currentBuild.result = 'FAILURE'
+                            throw e
+                        }
                     }
                 }
             }
@@ -49,9 +55,7 @@ pipeline {
             slackSend (
                 channel: '#management-service-for-start-up', 
                 color: '#33FF33', 
-                message: """
-                SUCCESS: dockerimage:${BUILD_NUMBER}
-                """
+                message: "SUCCESS: dockerimage:${BUILD_NUMBER}"
             )
         }
         failure {
