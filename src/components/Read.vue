@@ -394,19 +394,23 @@ export default {
     submitForm: function() {
       console.log(this.username, this.email, this.phone, this.content);
     },
-    send : function() {
-    axios.post(`${process.env.VUE_APP_WAS}/contact`,
-    	{info: { username:this.username, email:this.email, phone: this.phone, content: this.content }}
-    ).then(response => {
-      if(response.status == 200) {
-        alert("등록되었습니다.")
-        this.$router.go()
-      }
-        this.result = response.data
-        this.no = response.data.no
-    }).catch((ex) => {
-    	console.warn("Error : ",ex)
-    })
+//     send : function() {
+//     axios.post(`${process.env.VUE_APP_WAS}/contact`,
+//     	{info: { username:this.username, email:this.email, phone: this.phone, content: this.content }}
+//     ).then(response => {
+//       if(response.status == 200) {
+//         alert("등록되었습니다.")
+//         this.$router.go()
+//       }
+//         this.result = response.data
+//         this.no = response.data.no
+//     }).catch((ex) => {
+//     	console.warn("Error : ",ex)
+//     })
+// },
+send: function() {
+  alert("등록되었습니다.");
+  this.$router.go()
 },
 
 
