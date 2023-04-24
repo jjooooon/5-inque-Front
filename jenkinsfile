@@ -50,15 +50,15 @@ pipeline {
                 channel: '#management-service-for-start-up', 
                 color: '#33FF33', 
                 message: """
-                SUCCESS: Job ${dockerImage}
+                SUCCESS: dockerimage:${BUILD_NUMBER}
                 """
             )
         }
         failure {
             slackSend (
-                channel: '#test', 
+                channel: '#management-service-for-start-up', 
                 color: '#FF0000', 
-                message: "FAIL: Job ${dockerImage}"
+                message: "FAIL: dockerimage:${BUILD_NUMBER}"
             )
         }
     }
