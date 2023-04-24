@@ -41,17 +41,17 @@
     >
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100"
-            src="../assets/no_1.jpg" alt="image slot"  caption="contact us">
+            src="../assets/f_no_1.jpg" alt="image slot"  caption="contact us">
       </b-carousel-slide>
 
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100"
-            src="../assets/no_2.jpg" alt="image slot" caption="contact us">
+            src="../assets/f_no_2.jpg" alt="image slot" caption="contact us">
       </b-carousel-slide>
 
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100"
-            src="../assets/no_3.jpg" alt="image slot" caption="contact us">
+            src="../assets/f_no_3.jpg" alt="image slot" caption="contact us">
       </b-carousel-slide>
     </b-carousel>
     <div class="caption">Best to Best</div>
@@ -60,35 +60,34 @@
   </section>
 
   <section ref="section2" id="section2" class="section2">
-    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F7937h%2Fbtr8LjeaHJ9%2FJNb9hn4JMF3fasinVIo52K%2Fimg.png">
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FwCu6W%2FbtsbAOOsnsu%2FRxsusZUv9qMzEMD8GsEL61%2Fimg.png">
         <div style="display:flex;">
+          
     <div style="width:25%; float:left;">
-    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F9avBB%2Fbtsbk1hrssD%2F4aBQVuoHHDaHbOZIIILnU0%2Fimg.png" 
     img-alt="Card image" style="max-width: 100%; height: 100%;">
-        <b-card-text>비용절감 측면에서 설명</b-card-text>
+        <b-card-text>"<b>더 적은 비용</b>으로 <b>더 많은 가치</b>"<br>효율적인 Cloud 운영이 가능합니다!</br></b-card-text>
       </b-card>
     </div>
 
     <div style="width:25%; float:left;">
-      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZuMso%2FbtsbqrMrpBy%2FAp19IyqnTcQjhBGzuY1Ih1%2Fimg.png" 
     img-alt="Card image" style="max-width: 100%; height: 100%;">
-        <!-- <b-card-title>Security</b-card-title>
-        <img title="Card Title" src="../assets/2.jpg" alt="Image" tag="article" top style="max-width: 17rem;" class="mb-2"> -->
-        <b-card-text>보안관련 기능 설명</b-card-text>      
+        <b-card-text>다양한 <b>Cloud Platform</b>을 지원하여<br>비즈니스에 <b>최적화된 환경</b>을 제공합니다.</b-card-text>      
       </b-card>
     </div>
 
     <div style="width:25%; float:left;">
-      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fl4SFd%2Fbtsbn3rJqX3%2Fi00hHQLQibd6BxxqUwsBpK%2Fimg.png" 
     img-alt="Card image" style="max-width: 100%; height: 100%;">
-        <b-card-text>Startup의 특성 중 하나인 데이터 사용의 급증에 대처할 수 있는 기능 소개</b-card-text>      
+        <b-card-text>빠른 배포와 안정성. <b>최고 수준의 CICD 환경</b>으로 <b>완벽한 데브옵스</b>를 선사합니다.</b-card-text>      
       </b-card>
     </div>
 
     <div style="width:25%; float:left;">
-      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+      <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2pNzT%2Fbtsbk28wIr1%2FHZqHKWadp7SIRsSA6LK6zK%2Fimg.png" 
     img-alt="Card image" style="max-width: 100%; height: 100%;">
-        <b-card-text>무엇을 넣을지 생각해보기</b-card-text>       
+        <b-card-text>최신 기술과 전문가들의 노하우로<br>높은 수준의 <b>보안성</b>과 <b>안정적인 시스템</b></b-card-text>       
       </b-card>
     </div>
   </div>
@@ -98,137 +97,137 @@
     <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FAdUwS%2Fbtr8ZU4ROZ8%2FznF5yXQPAkKzIrKIL7j171%2Fimg.png" style="margin-bottom: 30px;">
     </div>
 
-      <div style="margin-top: 1%;">
+      <div style="margin-top: 0%;">
       
     </div>
     <div style="width:15%; float:left; margin-left: 2.5%">
-    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtrAAu%2Fbtr8Io6ER28%2Fd73yggKAUG1hPR3hMQvm3k%2Fimg.jpg" 
+    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBKCEi%2FbtsbmXYPAOs%2FFGTTau5BlMBN6IbCzWYZI0%2Fimg.png" 
     img-alt="Card image">
       <b-card-text>
         <h4>이승진</h4>
         <ul>
           <li>
-            직책 : 팀장
+            <b>Position</b> : Leader
           </li>
           <!-- <li>
             연락처 : 010-0000-0000
           </li> -->
           <li>
-            출생 : 1993.3.5
+            <b>Specialization</b> : <br>AWS
           </li>
           <li>
-            나이 : 만 30세
+            <b>Tech Stack</b> : <br>Kubernetes
           </li>
           <li>
-            신체 : 181cm
+            <b>Job Title</b> : <br>k8s Architecture<br>&nbsp
           </li>
         </ul>        
       </b-card-text>
-      <b-button href="https://www.naver.com" variant="primary">Portfolio</b-button>
+      <b-button href=" https://kettner2.notion.site/kettner2/8b05c6ff42614299bbf8dd7312d69c56" variant="primary">Portfolio</b-button>
     </b-card>
     </div>
 
     <!-- <div style="width:20%; float:left; margin-left: 10%; margin-right: 10%;"> -->
     <div style="width:15%; float:left; margin-left: 5%">
-    <b-card img-src="https://placekitten.com/300/300" img-alt="Card image">
+    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbPbf8H%2FbtsbmXqZ4Up%2Fcu0yt9zt0HuJX4EFeKz6cK%2Fimg.jpg" img-alt="Card image">
       <b-card-text>
         <h4>박지환</h4>
         <ul>
           <li>
-            직책 : 팀원
+            <b>Position</b> : Crew
           </li>
           <!-- <li>
             연락처 : 010-0000-0000
           </li> -->
           <li>
-            출생 : 1992.10.10
+            <b>Specialization</b> : <br>CI / CD
           </li>
           <li>
-            나이 : 만 31
+            <b>Tech Stack</b> : <br>Cloud observability Dev.<br>&nbsp
           </li>
           <li>
-            신체 : 181cm
+            <b>Job Title</b> : <br>Developer
           </li>
         </ul>                  
       </b-card-text>
-      <b-button href="https://www.naver.com" variant="primary">Portfolio</b-button>
+      <b-button href="https://short-alley-a2b.notion.site/63f0ff37d1f94edc9c569171d15e6f01" variant="primary">Portfolio</b-button>
     </b-card>
     </div>
     
     <!-- <div style="width:20%; float:right; margin-right: 10%;"> -->
       <div style="width:15%; float:left; margin-left: 5%">
-    <b-card img-src="https://placekitten.com/300/300" img-alt="Card image">
+    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fby1zuc%2Fbtsbn4ckJAg%2FhJq80nbWaCWUKWedtGumgK%2Fimg.jpg" img-alt="Card image">
       <b-card-text>
         <h4>이준영</h4>
         <ul>
           <li>
-            직책 : 팀원
+            <b>Position</b> : Crew
           </li>
           <!-- <li>
             연락처 : 010-0000-0000
           </li> -->
           <li>
-            출생 : 1992.1.11
+            <b>Specialization</b> : <br>Data Analysis
           </li>
           <li>
-            나이 : 만 31세
+            <b>Tech Stack</b> : <br>Analysis, Web Dev.
           </li>
           <li>
-            신체 : 181cm
+            <b>Job Title</b> : <br>Data Engineer<br>&nbsp
           </li>
         </ul>      
       </b-card-text>
-      <b-button href="https://www.naver.com" variant="primary">Portfolio</b-button>
+      <b-button href="https://stormy-ornament-219.notion.site/Portfolio-3f223d140cc14b1dbbeb2d086f5bc643" variant="primary">Portfolio</b-button>
     </b-card>
     </div>
 
     <!-- <div style="width:20%; float:left; margin-left: 25%;"> -->
     <div style="width:15%; float:left; margin-left: 5%">
-    <b-card img-src="https://placekitten.com/300/300" img-alt="Card image">
+    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FV8oFY%2Fbtsbn4KaD4m%2FhmgAsSKPQ99DljwwjXG3S1%2Fimg.jpg" img-alt="Card image">
       <b-card-text>
         <h4>정재하</h4>
         <ul>
           <li>
-            직책 : 팀원
+            <b>Position</b> : Crew
           </li>
           <!-- <li>
             연락처 : 010-0000-0000
           </li> -->
           <li>
-            출생 : 1996.12.30
+            <b>Specialization</b> : <br>CI / CD
           </li>
           <li>
-            나이 : 만 26세
+            <b>Tech Stack</b> : <br>Jenkins, Argo
           </li>
           <li>
-            신체 : 181cm
+            <b>Job Title</b> : <br>Infra Specialist<br>&nbsp
           </li>
         </ul>       
       </b-card-text>
-      <b-button href="https://www.naver.com" variant="primary">Portfolio</b-button>
+      <b-button href="https://hollow-dirt-849.notion.site/Cloud-Infra-Engineer-201c7bbfb94841a7b854c3b84ac08194" variant="primary">Portfolio</b-button>
     </b-card>
     </div>
 
     <!-- <div style="width:20%; float:right; margin-right: 25%;"> -->
     <div style="width:15%; float:left; margin-left: 5%">
-    <b-card img-src="https://placekitten.com/300/300" img-alt="Card image">
+    <b-card img-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc8Hhko%2FbtsbmXkeU6I%2FkTtyJY3uKi0x53xzx2EJS1%2Fimg.png" img-alt="Card image">
       <b-card-text>
         <h4>허민준</h4>
         <ul>
           <li>
-            직책 : 팀원
+            <b>Position</b> : Crew
           </li>
           <!-- <li>
             연락처 : 010-0000-0000
           </li> -->
           <li>
-            출생 : 1994.12.28
+            <b>Specialization</b> : <br>Security Services
+          </li> 
+          <li>
+            <b>Tech Stack</b> : <br>Cloud Security
           </li>
           <li>
-            나이 : 만 28세
-          </li>
-          <li>
-            신체 : 181cm
+            <b>Job Title</b> : <br>Network Engineer<br>&nbsp
           </li>
         </ul>       
       </b-card-text>
@@ -240,7 +239,7 @@
     </section>
     <section ref="section4" id="section4" class="section4">
       <div class="outline">
-        <div class="left">
+        <div class="left" style="margin-top:3%">
 <div class="contact-title">
   <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FYRizL%2Fbtr8NcyMVX9%2F4Mo87MXE607X4WLK7OzeoK%2Fimg.png" style="margin-bottom: 30px;  padding-bottom: 5%; width: 30%;">
 </div>
@@ -297,13 +296,13 @@
 
     </b-col>
     <b-col sm="9">
-      <b-button @click="send" variant="primary">Block Level Button</b-button>
+      <b-button @click="send" variant="primary">Submit</b-button>
     </b-col>
   </b-row>
     <!-- ---------------content--------------- -->
         </div>
         <div class="right">
-            <div class="map" id="map">
+            <div class="map" id="map" style="margin-top:3%">
             </div>
         </div>
       </div>
@@ -488,32 +487,38 @@ export default {
 section.section1 {
     padding-top: 0;
     width: 100%;
-    height: 80em;
+    height: 70%;
     list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.899);
+    background-color: rgba(244, 244, 244, 0.899);
 }
 section.section2 {
     padding-top: 5%;
     width: 100%;
-    height: 65em;
+    height: 65%;
     list-style-type: none;
     background-color: rgb(244, 244, 244, 0.899);
 }
 section.section3 {
     padding-top: 3%;
     width: 100%;
-    height: 85em;
+    height: 85%;
     list-style-type: none;
     background-color: rgba(244, 244, 244, 0.899);
 }
 section.section4 {
     padding-top: 0;
     width: 100%;
-    height: 30em;
+    height: 30%;
     list-style-type: none;
     background-color: rgb(244, 244, 244, 0.899);
 }
-
+section.section5 {
+    padding-top: 40%;
+    width: 100%;
+    height: 40%;
+    list-style-type: none;
+    background-color: rgba(244, 244, 244, 0.899);
+  }
 
 div.header {
   position:fixed; 
@@ -571,13 +576,7 @@ ul.header {
     right: 0;
 }
 
-section.section5 {
-    padding-top: 0;
-    width: 100%;
-    height: 10em;
-    list-style-type: none;
-    background-color: rgb(255, 255, 255);
-  }
+
 ul li {
   text-align: left;
 }
@@ -597,7 +596,7 @@ div.myNavbar {
 }
 
 div.middle {
-  background-color: #f5f5f5;
+  background-color: rgb(244, 244, 244, 0.899);
 }
 .section1 {
   position: relative;
@@ -605,16 +604,16 @@ div.middle {
 
 .section1 .caption {
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 15%;
+  left: 15%;
   z-index: 1;
   color: rgb(255, 140, 0);
   font-size: 900%;
 }
 .section1 .caption1 {
   position: absolute;
-  top: 22.5%;
-  left: 6.5%;
+  top: 27.5%;
+  left: 20%;
   z-index: 1;
   color: rgb(255, 255, 255);
   font-size: 300%;
