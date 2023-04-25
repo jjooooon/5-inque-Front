@@ -50,7 +50,7 @@ spec:
     rollingUpdate:
       maxSurge: 2
       maxUnavailable: 1
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       tier: aws-fe
