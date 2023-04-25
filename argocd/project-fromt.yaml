@@ -46,10 +46,10 @@ metadata:
   name: project-deploy-fe
 spec:
   strategy:
-  type: RollingUpdate
-  rollingUpdate:
-    maxSurge: 2
-    maxUnavailable: 1
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 1
   replicas: 5
   selector:
     matchLabels:
