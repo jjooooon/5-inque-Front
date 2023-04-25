@@ -44,6 +44,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: project-deploy-fe
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxSurge: 2
+    maxUnavailable: 1
 spec:
   replicas: 5
   selector:
