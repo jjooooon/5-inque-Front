@@ -391,9 +391,6 @@ export default {
         section.scrollIntoView({ behavior: 'smooth' });
     },
 
-    submitForm: function() {
-      console.log(this.username, this.email, this.phone, this.content);
-    },
 //     send : function() {
 //     axios.post(`${process.env.VUE_APP_WAS}/contact`,
 //     	{info: { username:this.username, email:this.email, phone: this.phone, content: this.content }}

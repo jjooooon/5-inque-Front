@@ -35,7 +35,6 @@ import axios from 'axios';
     },
     methods: {
       login() {
-        console.log(this.userId, this.userPassword);
         axios.post('http://localhost:8085/login',
         { info: {id: this.userId, password: this.userPassword}}
         ).then(response => {

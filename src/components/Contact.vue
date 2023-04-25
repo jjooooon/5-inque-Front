@@ -95,7 +95,6 @@
       axios
         .patch(`${process.env.VUE_APP_WAS}/contact/delete`, { clearList: this.clearList })
         .then(response => {
-          console.warn("Success: ", response.status);
           if(response.status == 204) this.$router.go()
         })
         .catch(ex => {
@@ -106,9 +105,7 @@
     mounted() {
         axios.get(`${process.env.VUE_APP_WAS}/contact/getList`
         ).then(response => {
-            console.warn("before", response.data)
             this.items = response.data.list;
-            console.warn("after", this.items)
         }).catch((ex) => {
             console.warn("Error : ",ex)
         })

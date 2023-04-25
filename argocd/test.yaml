@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-deploy-test
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 1
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: aws-test
+  template:
+    metadata:
+      name: nginx-test
+      labels:
+        tier: aws-test
+    spec:
+      containers:
+        - name: aws-test-container
+          image: nginx:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
