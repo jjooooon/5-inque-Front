@@ -8,7 +8,7 @@ spec:
     rollingUpdate:
       maxSurge: 2
       maxUnavailable: 1
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       tier: aws-test
