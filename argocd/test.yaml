@@ -30,7 +30,7 @@ spec:
              memory: "1Gi"
            requests:
              cpu: "0.2"
-             memory: "512Mi"
+             memory: "64Mi"
 ---
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
@@ -49,10 +49,10 @@ spec:
         name: cpu
         target:
           type: Utilization
-          averageUtilization: 50
+          averageUtilization: 60
     - type: Resource
       resource:
         name: memory
         target:
           type: Utilization
-          averageUtilization: 50
+          averageUtilization: 60
