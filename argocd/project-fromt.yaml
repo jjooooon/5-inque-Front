@@ -19,6 +19,7 @@ metadata:
           "StatusCode": "HTTP_301"
         }
       }
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
 spec:
   rules:
   - http:
