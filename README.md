@@ -35,7 +35,7 @@
 
 
 # 시연 영상
-[![5INQUE](https://img.youtube.com/vi/HDuGehcfV14/0.jpg)](https://www.youtube.com/watch?v=g0sOjydT7lE&ab_channel=JoonyoungLee) 
+[![5INQUE](https://user-images.githubusercontent.com/99805929/235467186-bad25ff1-55b4-455e-b02e-c1470d42c269.png)](https://www.youtube.com/watch?v=g0sOjydT7lE&ab_channel=JoonyoungLee) 
 <br/>
 
 **클릭하면 영상으로 이동합니다.**
